@@ -76,7 +76,8 @@
                 $("#player-score").text(counter);
 
                 if (counter === targetNumber) {
-                    alert("You win!");
+                    // alert("You win!");
+                    $("#player-end").text("You WIN!");
                     win++;
                     $("#player-wins").text(win);
                     resetvalue();
@@ -84,7 +85,8 @@
                     setcrystal();
 
                 } else if (counter >= targetNumber) {
-                    alert("You lose!!");
+                    // alert("You lose!!");
+                    $("#player-end").text("You LOOSE!");
                     loss++;
                     $("#player-losses").text(loss);
                     resetvalue();
