@@ -55,7 +55,7 @@
             // This time, our click event applies to every single crystal on the page. Not just one.
             // $(".crystal-image").on("click", function () {
             $("#crystals").on("click", ".crystal-image", function () {
-                // $("#player-end").text("");
+                $("#player-end").text("");
                 // $("<img>").on("click", function () {
                 // Determining the crystal's value requires us to extract the value from the data attribute.
                 // Using the $(this) keyword specifies that we should be extracting the crystal value of the clicked crystal.
