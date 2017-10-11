@@ -81,18 +81,18 @@
                     $("#player-end").text("You WIN!");
                     win++;
                     $("#player-wins").text(win);
-                    resetvalue();
                     clearcrystal();
                     setcrystal();
+                    resetvalue();
 
                 } else if (counter >= targetNumber) {
                     // alert("You lose!!");
                     $("#player-end").text("You LOOSE!");
                     loss++;
                     $("#player-losses").text(loss);
-                    resetvalue();
                     clearcrystal();
                     setcrystal();
+                    resetvalue();
                 }
 
                 function resetvalue() {
