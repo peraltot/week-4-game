@@ -78,27 +78,28 @@
 
                 if (counter === targetNumber) {
                     // alert("You win!");
-                    $("#player-end").text("You won the last game!");
+                    $("#player-end").text("You won!");
                     win++;
                     $("#player-wins").text(win);
                     clearcrystal();
                     setcrystal();
-                    resetvalue();
+                    setTimeout(resetvalue,5000);
 
                 } else if (counter >= targetNumber) {
                     // alert("You lose!!");
-                    $("#player-end").text("You lost the last game!");
+                    $("#player-end").text("You lost!");
                     loss++;
                     $("#player-losses").text(loss);
                     clearcrystal();
                     setcrystal();
-                    resetvalue();
+                    setTimeout(resetvalue,5000);
                 }
 
                 function resetvalue() {
                     targetNumber = Math.floor(Math.random() * 100) + 20;
                     $("#number-to-guess").text(targetNumber);
                     counter = 0;
+                    $("#player-score").text(counter);
                 };
 
                 function clearcrystal() {
