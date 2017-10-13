@@ -79,7 +79,7 @@
                     
                     $("#player-end1").text("YOU LOST!");
                     $("#player-end2").text("Try Again...");
-                    win++;
+                    // win++;
                     loss++;
                     $("#player-losses").text(loss);
                     clearcrystal();
