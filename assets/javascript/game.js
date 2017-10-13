@@ -73,7 +73,7 @@
                     $("#player-wins").text(win);
                     clearcrystal();
                     setcrystal();
-                    setTimeout(resetvalue,3000);
+                    setTimeout(resetvalue,1500);
 
                 } else if (counter >= targetNumber) {
                     
@@ -84,7 +84,7 @@
                     $("#player-losses").text(loss);
                     clearcrystal();
                     setcrystal();
-                    setTimeout(resetvalue,3000);
+                    setTimeout(resetvalue,1500);
                 }
 
                 function resetvalue() {
